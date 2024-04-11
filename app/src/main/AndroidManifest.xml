@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xeta.app.aatraders">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/aa_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/aa_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".LoginActivity" android:theme="@style/generalnotitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".CartActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".ItemAddSpecialActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".ScanSpecialActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".ProceedBillActivity"  android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".BillInfoActivity" android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".DailyActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".MonthlyActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".ResetPassActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".BackupActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".ChooseActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".PopUp" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".ScanSpecialWholeActivity" android:windowSoftInputMode="adjustResize" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".ListBillActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".DeviceListActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".PrintSearchBillActivity" android:theme="@style/generalnotitle">
+        </activity>
+        <activity android:name=".StockActivity" android:windowSoftInputMode="adjustResize" android:theme="@style/generalnotitle">
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

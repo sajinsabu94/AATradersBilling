@@ -1,0 +1,114 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/AdditionalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:paddingTop="5dp"
+        android:text="Customer Name"
+        android:textSize="18dp"
+        android:textColor="@color/White">
+    </TextView>
+
+    <EditText
+        android:id="@+id/adittionalTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/AdditionalTitle"
+        android:background="@color/White"
+        android:textSize="15dp"
+
+        android:textColor="@color/Black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="top">
+    </EditText>
+
+    <TextView
+        android:id="@+id/additionalQuantityTV"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adittionalTextEdit"
+        android:text="Address"
+        android:textColor="@color/White"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/additionalQuantityTE"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/additionalQuantityTV"
+        android:background="@color/White"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="14dp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/adittionalPriceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/additionalQuantityTE"
+        android:text="Phone"
+        android:textColor="@color/White"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/adittionalPriceTE"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/adittionalPriceTV"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/White"
+        android:numeric="integer"
+        android:textSize="14dp"></EditText>
+
+    <Button
+        android:id="@+id/popupClose"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:onClick="doNothing"
+        android:layout_below="@+id/adittionalPriceTE"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:textColor="@color/colorPrimaryDark">
+    </Button>
+
+    <Button
+        android:id="@+id/SubmitAdditional"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/adittionalPriceTE"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:textColor="@color/colorPrimaryDark">
+    </Button>
+</RelativeLayout>

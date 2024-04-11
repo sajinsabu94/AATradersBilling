@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="6"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/tableStockText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+        <de.codecrafters.tableview.TableView
+            android:layout_weight="4"
+            android:id="@+id/tableStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </de.codecrafters.tableview.TableView>
+
+</LinearLayout>
